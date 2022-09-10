@@ -1,0 +1,117 @@
+.document {
+  filter: drop-shadow(8px 0px 10px rgba(95, 63, 63, 0.2));
+  background-color: $c-white;
+  color: $c-dark-charcoal;
+  padding: 90px;
+  @include media('<=tablet') {
+    padding: 30px;
+  }
+  &__name {
+    align-items: center;
+    column-gap: 170px;
+    display: flex;
+    @include media('<=tablet') {
+      column-gap: 24px;
+    }
+  }
+  &__title {
+    color: $c-blue-light;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 34px;
+    @include media('<=tablet') {
+      font-size: 28px;
+    }
+  }
+  &__position {
+    color: $c-blue-light;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 20px;
+    @include media('<=tablet') {
+      font-size: 18px;
+    }
+  }
+  &__information {
+    align-items: center;
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+    @include media('<=tablet') {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  &__social-links {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+  }
+  &__link-gitHub,
+  &__link-telegram {
+    display: flex;
+    width: 24px;
+  }
+  &__summary {
+    margin-top: 25px;
+  }
+  &__small-title {
+    color: $c-blue-light;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  &__text {
+    padding: 10px 10px 10px 15px;
+  }
+  &__skills {
+    margin-top: 15px;
+  }
+  &__list {
+    padding: 10px 10px 10px 15px;
+  }
+  &__my-skill {
+    margin-left: 20px;
+    margin-top: 5px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__education {
+    margin-top: 15px;
+  }
+  &__education-list {
+    padding: 10px 10px 10px 15px;
+  }
+  &__education-info {
+    font-weight: 500;
+    margin-top: 10px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  &__education-type {
+    margin-top: 5px;
+  }
+  &__projects {
+    margin-top: 15px;
+  }
+  &__pr-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 10px 10px 15px;
+    align-items: center;
+    display: grid;
+    gap: 20px;
+  }
+  &__pr-item {
+    text-decoration: underline;
+    color: $c-blue-light;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &__languages {
+    margin-top: 15px;
+  }
+  &__lang-list {
+    padding: 10px 10px 10px 15px;
+  }
+}

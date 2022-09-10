@@ -1,0 +1,5 @@
+.content {
+  @include maxCentered(1200, 20);
+  padding-top: 40px;
+  padding-bottom: 60px;
+}

@@ -1,0 +1,57 @@
+mixin document 
+  .document 
+    .document__name 
+      h1.document__title Nazar Yaremii 
+      +line
+    .document__position Web Developer
+    .document__information 
+      .document__location Ukraine, Lviv |
+      a(href='tel:+380989927765').document__phone +380989927765 |
+      a(href='mailto:n.yaremiy791@gmail.com').document__email n.yaremiy791@gmail.com |
+      .document__social-links 
+        a.document__link-telegram(href="https://t.me/n_yaremiy" target='_blank') 
+          include ../../../assets/svg/telegram.svg
+        a.document__link-gitHub(href="https://github.com/nyaremiy" target='_blank') 
+          include ../../../assets/svg/gitHub.svg
+    .document__summary 
+      h2.document__small-title SUMMARY:
+      +line
+      p.document__text I want to get the work of my dream, which will give me freedom, a high level ofwealth, as well as a cool team of friends and like-minded people
+    .document__skills
+      h2.document__small-title SKILLS:
+      +line
+      ul.document__list
+        li.document__my-skill ReactJS, Redux, Redux Toolkit
+        li.document__my-skill JavaScript ES6+, jQuery
+        li.document__my-skill HTML & PUG
+        li.document__my-skill CSS & SASS/SCSS
+        li.document__my-skill Methodology BEM
+        li.document__my-skill Adaptive and cross-browser layout of the site
+        li.document__my-skill npm / yarn
+        li.document__my-skill Gulp
+        li.document__my-skill Git & GitHub & Heroku
+        li.document__my-skill Figma & Photoshop
+        li.document__my-skill NodeJs & MongoDB(base)
+      .document__education 
+        h2.document__small-title EDUCATION:
+        +line
+        .document__education-list
+          .document__education-info 01.2022 - 07.2022 | BeetRoot Academy
+          .document__education-type Front-End cource
+          .document__education-info 2016 - 2020 | College of Technology of the National University "Lviv Polytechnic"
+          .document__education-type Computer Science
+      .document__projects 
+        h2.document__small-title RELEVANT PROJECTS:
+        +line
+        .document__pr-list 
+          a(href='https://nyaremiy.github.io/DSI/').document__pr-item dsi
+          a(href='https://nyaremiy.github.io/yunmei-polis/').document__pr-item yunmei-polis
+          a(href='https://nyaremiy.github.io/Form-Registration/').document__pr-item form-registration
+          a(href='https://github.com/nyaremiy/todo-list-react').document__pr-item react todo list
+      .document__languages
+        h2.document__small-title LANGUAGES:
+        +line
+        .document__lang-list
+          .document__lang Ukrainian - fluent
+          .document__lang.top English - A2
+
